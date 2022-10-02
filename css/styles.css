@@ -40,10 +40,25 @@ body {
 .button-hero{
     background-color: #2196F3;
     color: #FFFFFF;
+    border: 0;
 }
 
 .button{
     cursor: pointer;
+}
+
+.button-filter{
+    background-color: #F5F4FA;
+    color: black;
+    opacity: 1;
+    border: 0;
+}
+
+.button-filter:hover,
+.button-filter:focus{
+    opacity: 1,5;
+    background-color: #2196F3;
+    color: #FFFFFF;
 }
 
 .description{
