@@ -128,9 +128,11 @@ ul {
 
 .project{
     color: var(--main-color);
+    background-color: #EEEEEE;
 }
 
 .project-title{
+    color: var(--main-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
