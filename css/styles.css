@@ -1,14 +1,8 @@
-.icon {
-    color: #2196f3;
-}
-
-.logo {
-    color: #000000;
-    font-family: Raleway;
-}
-
-a {
-    text-decoration: none;
+:root {
+    --link-button-color: #2196f3;
+    --main-color: #212121;
+    --second-color: #ffffff;
+    --dis-link-color: #757575;
 }
 
 body {
@@ -16,71 +10,201 @@ body {
     background-color: #f5f5f5;
 }
 
-.link {
+a {
     text-decoration: none;
-    color: #757575;
+}
+
+ul {
+    list-style: none;
+}
+
+/* хедер */
+.icon {
+    color: var(--link-button-color);
+}
+
+.logo {
+    color: #000000;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+}
+
+.nav-list {
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.link {
+    color: var(--dis-link-color);
     opacity: 0.5;
 }
 
 .link:hover,
 .link:focus {
     opacity: 1;
-    color: #2196F3;
+    color: var(--link-button-color);
 }
 
+/* основне */
+
+/* герой */
 .hero {
     background-color: #2f303a;
 }
 
-.hero-1{
+.hero-title {
+    color: var(--second-color);
     font-weight: 900;
-    color: #FFFFFF;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
-.button-hero{
-    background-color: #2196F3;
-    color: #FFFFFF;
+/* приховане */
+.hide:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+
+/* кнопкки */
+.button {
+    cursor: pointer;
+    color: var(--main-color);
+    border-radius: 4px;
+}
+
+.button-hero {
+    background-color: var(--link-button-color);
+    color: var(--second-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
     border: 0;
 }
 
-.button{
-    cursor: pointer;
-}
-
-.button-filter{
-    background-color: #F5F4FA;
-    color: black;
+.button-filter {
+    background-color: #f5f4fa;
     opacity: 1;
     border: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .button-filter:hover,
-.button-filter:focus{
-    opacity: 1,5;
-    background-color: #2196F3;
-    color: #FFFFFF;
+.button-filter:focus {
+    opacity: 1, 5;
+    background-color: var(--link-button-color);
+    color: var(--second-color);
 }
 
-.description{
-    color: #757575;
+/* опис */
+.special-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
-.team{
-    background-color: #F5F4FA;
+.project{
+    color: var(--main-color);
 }
 
-.name{
+.project-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+
+.description {
+    color: var(--dis-link-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+/* чим ми займаємось */
+.show{
+    font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+}
+
+/* команда */
+.team {
+    background-color: #f5f4fa;
+}
+
+.team-name{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.name {
     font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
-.job{
-    color:  #757575;
+.job {
+    color: var(--dis-link-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
-.bottom{
-    background-color: #2F303A;
+/* підвал */
+.bottom {
+    background-color: #2f303a;
 }
 
-.building{
-    color: #FFFFFF;
+.logo.second {
+    color: var(--second-color);
+}
+
+.building {
+    color: var(--second-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+.cont{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
