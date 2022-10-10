@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: var(--second-color);
 }
 
@@ -28,7 +28,7 @@ ul {
 
 .logo {
     color: var(--logo-color);
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
@@ -88,7 +88,7 @@ ul {
 /* кнопкки */
 .button {
     background-color: var(--butn-team-color);
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     cursor: pointer;
     color: var(--main-color);
     border-radius: 4px;
