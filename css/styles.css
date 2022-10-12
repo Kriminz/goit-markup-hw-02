@@ -21,6 +21,10 @@ ul {
     list-style: none;
 }
 
+.section{
+    outline: 2px solid purple;
+}
+
 /* хедер */
 .icon {
     color: var(--link-button-color);
